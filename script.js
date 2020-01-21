@@ -30,4 +30,14 @@ $(document).ready(function() {
    $("a").mouseleave(function() {
        $("body").css("background-color", "#eee");
    });
+   $("#html_btn").mouseenter(function() {
+       $("#html_btn").fadeTo("2000","0.5");    
+   });
+   $("#html_btn").mouseleave(function() {
+       $("#html_btn").fadeTo("2000","1.0");    
+   });   
+   $("#html_btn").on("click", function() {
+       //$("#html_btn").hide("2000");
+       $("#html_para").slideToggle();       
+   });
 }); 
