@@ -6,6 +6,11 @@ $(document).ready(function() {
         $(everyCardClass).removeClass("highlight_stream");
         $(thisCardClass).addClass("highlight_stream");
    });
+
+   $("p").on("click", function() {
+       $("p").children("a").css("background-color", "transparent");
+       $(this).children("a").css("background-color", "yellow");
+   });
    /*$("#stream1").on("click", function() {
         $(".stream1").removeClass('highlight_stream');
         $(".stream2").removeClass('highlight_stream');
