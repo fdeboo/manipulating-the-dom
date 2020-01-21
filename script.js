@@ -1,9 +1,10 @@
 $(document).ready(function() {
     $(".nav-link").on("click", function() {
-        let cardClass = "." + this.id + "-card";
+        let thisCardClass = "." + this.id + "-card";
+        let everyCardClass = ".card";
 
-        $(".card").removeClass("highlight_stream");
-        $(cardClass).addClass("highlight_stream");
+        $(everyCardClass).removeClass("highlight_stream");
+        $(thisCardClass).addClass("highlight_stream");
    });
    /*$("#stream1").on("click", function() {
         $(".stream1").removeClass('highlight_stream');
