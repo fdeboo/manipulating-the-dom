@@ -21,6 +21,14 @@ $(document).ready(function() {
 
        });
 
+   $("#reappear").click(function() {
+       let cardClass = ".card";
+       let highlightedCards = ".highlight_stream";
+       
+       $(cardClass).not(highlightedCards).css("display", "block");
+
+       });
+
    
    
 });
