@@ -15,11 +15,16 @@ $(document).ready(function(){
         $("#panel .container").siblings().fadeTo( "slow", 1.0 );
     });
 
-    $( ".theButton" ).mouseenter(function() {
-        $(this).addClass("makeBlack");
+    $( ".theButton" ).click(function() {
+        let panelColor = $(this).css("background-color");
+        $(".superButton").css("color", panelColor );
     });
 
-    $( ".theButton" ).mouseleave(function() {
-        $(this).removeClass( "makeBlack" );
-    });
+    //$( ".theButton" ).mouseenter(function() {
+      //  $(this).addClass("makeBlack");
+    //});
+
+    //$( ".theButton" ).mouseleave(function() {
+       // $(this).removeClass( "makeBlack" );
+    //});
 });
